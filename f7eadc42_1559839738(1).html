@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en" class="geolocation audio canvas video supports csstransforms3d csstransitions details texttrackapi track wf-montserrat-n4-active wf-active" style="overflow: hidden;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script async="" src="./analytics.js.download"></script><script type="text/javascript" src="./4474f5c124(1)"></script><script src="./nr-1130.min.js.download"></script><script src="./jquery.min.js.download"></script>
+<link rel="shortcut icon" type="image/x-icon" href="https://s3-us-west-1.amazonaws.com/powr/images/favicon.ico">
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4474f5c124","applicationID":"77339425","transactionName":"dV0NRxBfDVxcEBdXQkZBTEULVRZDFhFQWUU=","queueTime":4,"applicationTime":119,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UQYGV19aGwQHV1JbAwMC"};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(18),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(19),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var x=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof x&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof x&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(21)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(21)(r);n.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(21)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(21)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(b?b.then(a):w?w(a):(E=-E,R.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(21)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var x=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(){var t=window.NREUM,n=t.info.accountID||null,e=t.info.agentID||null,r=t.info.trustKey||null,i="btoa"in window&&"function"==typeof window.btoa;if(!n||!e||!i)return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:e,id:o.generateCatId(),tr:o.generateCatId(),ti:Date.now()}};return r&&n!==r&&(a.d.tk=r),btoa(JSON.stringify(a))}var o=t(16);n.exports={generateTraceHeader:r}},{}],11:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(l[r],this.listener,!1);n.aborted||(e.duration=s.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==n.status&&(n.status=0):a(this,t),e.cbTime=this.cbTime,d.emit("xhr-done",[t],t),c("xhr",[n,e,this.startTime]))}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return w(r)}function i(t,n){var e=f(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}function a(t,n){t.params.status=n.status;var e=o(n,t.lastSize);if(e&&(t.metrics.rxSize=e),t.sameOrigin){var r=n.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var s=t("loader");if(s.xhrWrappable){var c=t("handle"),f=t(12),u=t(10).generateTraceHeader,d=t("ee"),l=["load","error","abort","timeout"],p=l.length,h=t("id"),m=t(15),w=t(14),v=window.XMLHttpRequest;s.features.xhr=!0,t(9),d.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,n.loadCaptureCalled=!1,t.addEventListener("load",function(e){a(n,t)},!1),m&&(m>34||m<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),d.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),d.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var e=!1;if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(e=!!NREUM.init.distributed_tracing.enabled),e&&this.sameOrigin){var r=u();r&&n.setRequestHeader("newrelic",r)}}),d.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=w(r);i&&(e.txSize=i)}this.startTime=s.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{d.emit("internal-error",[e])}catch(r){}}};for(var a=0;a<p;a++)n.addEventListener(l[a],this.listener,!1)}),d.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),d.on("xhr-load-added",function(t,n){var e=""+h(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),d.on("xhr-load-removed",function(t,n){var e=""+h(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),d.on("addEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&d.emit("xhr-load-added",[t[1],t[2]],n)}),d.on("removeEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&d.emit("xhr-load-removed",[t[1],t[2]],n)}),d.on("fn-start",function(t,n,e){n instanceof v&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=s.now()))}),d.on("fn-end",function(t,n){this.xhrCbStart&&d.emit("xhr-cb-time",[s.now()-this.xhrCbStart,this.onload,n],n)})}},{}],12:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],13:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(18),s=t(19),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t,n){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,n])}},{}],14:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],15:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],16:[function(t,n,e){function r(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(n=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(n=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}n.exports={generateUuid:r,generateCatId:o}},{}],17:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],18:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],19:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],20:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],21:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(19),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[g[e]];return d&&d.push([x,e,r,a]),a}}function p(t,n){y[t]=m(t).concat(n)}function h(t,n){var e=y[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return y[t]||[]}function w(t){return d[t]=d[t]||o(e)}function v(t,n){f(t,function(t,e){n=n||"feature",g[e]=n,n in u||(u[n]=[])})}var y={},g={},x={on:p,addEventListener:p,removeEventListener:h,emit:e,get:w,listeners:m,context:n,buffer:v,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(18),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=b.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(g,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return R.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(18),u=t("ee"),d=t(17),l=window,p=l.document,h="addEventListener",m="attachEvent",w=l.XMLHttpRequest,v=w&&w.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:w,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var y=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},x=w&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:x,userAgent:d};t(13),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,R=t(20)},{}]},{},["loader",2,11,4,3]);</script>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="Check out my awesome POWr Countdown Timer app! 😃" property="og:title">
+<meta content="Build your own simple tools for any website: forms, galleries, countdown timers and more!" property="og:description">
+<meta content="https://www.powr.io/countdown-timer/u/f7eadc42_1559839738" property="og:url">
+<meta content="website" property="og:type">
+<meta content="https://s3-us-west-1.amazonaws.com/powr/plugins/countdownTimer/318x318.jpg" property="og:image">
+<link href="https://www.powr.io/api/v1/oembed?format=json&amp;url=https://www.powr.io/plugins/countdown-timer/view/20176176" rel="alternate" type="application/json+oembed">
+<link rel="canonical" href="https://www.powr.io/plugins/view?id=20176176">
+<link href="./bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="./font-awesome.min.css" rel="stylesheet">
+<script async="async" defer="defer" src="./webfont.js.download"></script>
+<link rel="stylesheet" media="screen" href="./countdownTimer-beaab9b98a19c8393501d228981fa273e6c4fa17a55167b12ba3a60ac784c3ff.css">
+<!--[if IE 9]>
+<link rel="stylesheet" media="screen" href="/assets/ie9-overrides-d47ca5f5fe9f83b1154338bd52611418bf94481641dbd9d32284172cd60a72aa.css" />
+<![endif]-->
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="oHHIQk1lIsk97MFHrmSWqiDfP8PBGL1LWGMZIHQJ+luoFg5uXf62H9sdLa6pIpMWuVqHglB4MqOeRD31jDuEDA==">
+<title>Countdown Timer</title><meta content="Countdown Timer" name="description"><meta content="Countdown Timer" property="og:title"><meta content="website" property="og:type"><meta content="https://www.powr.io/countdown-timer/u/f7eadc42_1559839738#platform=html" property="og:url"><meta content="https://s3-us-west-1.amazonaws.com/powr/plugins/countdownTimer/318x318.jpg" property="og:image"><meta content="Countdown Timer" property="og:description"><meta content="summary" name="twitter:card"><meta content="Countdown Timer" name="twitter:title"><meta content="Countdown Timer" name="twitter:description"><link rel="stylesheet" href="./css" media="all"><meta content="https://s3-us-west-1.amazonaws.com/powr/plugins/countdownTimer/318x318.jpg" name="twitter:image"></head><body class="" id="views-show"><div id="dynamicStyle">
+    <style>
+        .afterCompletion .bannerContent{
+    
+        background: rgba(255, 255, 255, 0.5);
+    
+}
+
+        
+          .countdownTimer{
+    
+        background: rgba(255, 255, 255, 0);
+    
+}
+          .countdownTimer .nextNumberWrapper, .countdownTimer .currentNumberWrapper{
+    border-color: #dbdbdb;
+    border-radius: 5px;
+    border-width: 0px;
+    border-style: solid;
+    
+        background: rgba(234,67,53,1);
+    
+}
+
+        
+
+        .countdownTimer .counterElement{
+            color: rgba(253,253,253,1);
+            font-family: Montserrat;
+            width: 50px;
+            height: 50px;
+            font-size: 40px;
+            margin: 0 4px;
+        }
+        .countdownTimer {
+          
+            background: ;
+          
+          padding-top: 0px;
+          padding-bottom: 0px;
+        }
+
+        .flipBottom .nextNumberWrapper, .popup .nextNumberWrapper, .popup .nextNumberWrapper, .flipBottom .currentNumberWrapper {
+          
+            background-color: rgba(234,67,53,1);
+          
+          border-width: 0px;
+          border-color: #dbdbdb;
+          border-radius: 5px;
+        }
+        .countdownTimer .counterElement:not(.powrMarkCounterElement) {
+          border: none !important;
+          border-width: 0px !important;
+          border-radius: 0px !important;
+        }
+        /**/
+         .countdownTimer .icon-logo {
+           font-size: 40px!important;
+         }
+        .countdownTimer a.btn{
+          font-family: Montserrat;
+          font-size: 14.4px!important;
+          
+            background-color: rgba(234,67,53,1)!important;
+            color: rgba(253,253,253,1)!important;
+          
+        }
+        .countdownTimer .timeLabel, .countdownTimer .subtitle{
+            
+              color: rgba(0,0,0,1);
+            
+            font-family: Montserrat;
+            /*font-size: 20px;*/
+        }
+        .countdownTimer .titleText{
+          font-size: 32px;
+          font-family: Montserrat;
+          
+            color: rgba(0,0,0,1);
+          
+        }
+        .countdownTimer .separator{
+            font-size: 30px;
+            
+              color: rgba(0,0,0,1);
+            
+        }
+        .countdownTimer .separator:before{
+            
+            content: ':';
+            vertical-align: middle;
+            
+        }
+        
+          .countdownTimer .showYears{display:none}
+          .countdownTimer .afterYears{display:none}
+          .countdownTimer .separator.showYears{display:none}
+        
+        
+          .countdownTimer .showDays{display:none}
+          .countdownTimer .afterDays{display:none}
+          .countdownTimer .separator.showDays{display:none}
+        
+        
+        
+        
+        
+        
+        
+
+
+        /* .countdownTimer .bannerTextWrapper{
+            color: rgba(0,0,0,1);
+            font-family: Montserrat;
+        } */
+        .countdownTimer .bannerTextWrapper .subtitle, .countdownTimer .bannerTextWrapper .btn{
+            font-size: 20.8px;
+        }
+
+        .countdownTimer .uncompleted{
+            background-color: rgba(255, 255, 255, 0);
+        }
+        .powrMark .counterElement {
+          color: rgba(253,253,253,1);
+          border-color: #dbdbdb;
+          border-radius: 5px;
+          border-style: solid;
+          border-width: 0px;
+          
+            background: rgba(234,67,53,1);
+          
+        }
+    </style>
+</div>
+
+
+<div class="text-center hid btn btn-primary btn-xs design_2 js-hide-if-pos" id="editMe" data-original-title="" title="">
+<i class="fa fa-cogs"></i>
+Edit
+<span class="js-edit-me-app-name">
+Countdown Timer
+</span>
+</div>
+<div class="editMeMenu js-editMeMenu">
+<ul class="editMeMenu__list">
+<li class="editMeMenu__header">
+<div class="editMeMenu__triangle"></div>
+<a class="editMenu__headerLink" href="https://www.powr.io/knowledge-base/139" target="_blank">
+Only you can see this
+</a>
+</li>
+<li class="editMeMenu__item">
+<a class="editMeMenu__link js-launchPopoutSettings">
+Edit on Live Site
+</a>
+</li>
+<li class="editMeMenu__item">
+<a class="editMeMenu__link js-launchStandalone">
+Edit in Draft Mode
+</a>
+</li>
+</ul>
+</div>
+<div class="js-unclaimed-watermark unclaimedWatermark hid" style="display: none;">
+<div class="unclaimedWatermark__message-holder">
+<h3 class="unclaimedWatermark__message">
+This plugin is unclaimed. Sign up to activate it!
+</h3>
+<button class="button button-primary js-unclaimed-cta">
+Sign Up
+</button>
+</div>
+</div>
+<div class="unclaimedWatermark hid" id="unblockedFeaturesPopup" style="display: none;">
+<div class="unclaimedWatermark__message-holder">
+<h4 class="unclaimedWatermark__message">
+You added paid features to your Form Builder.
+</h4>
+<h5 class="unclaimedWatermark__message">
+Upgrade your plan to publish Form Builder with paid features.
+<br>
+Remove paid features to publish Form Builder for free.
+</h5>
+</div>
+</div>
+<div id="appView" class="" style="margin-bottom: 0px;">
+    <div class="countdownTimer uncompleted default top ">
+        <div class="afterCompletion bannerOuterWrapper hid">
+          <div class="banner">
+              
+              <div class="bannerContent " style="font-family: Montserrat; color:rgba(0,0,0,1); background-color:rgba(255, 255, 255, 0.5);">
+  <div class="imageWrapper">
+    <div class="imageInnerWrapper">
+      <div class="imageInnerInnerWrapper">
+        
+      </div>
+    </div>
+  </div>
+  <div class="bannerTextWrapper fitTextParent">
+    <div class="bannerTextInnerWrapper">
+      <div class="bannerText">
+        <div class="title titleText fitText" data-orig-font-size="48" style="font-size: 48px;">
+          
+        </div>
+        <div class="subtitle fitText" data-orig-font-size="32" style="font-size: 32px;">
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+        
+          <div class="beforeCompletion bannerOuterWrapper">
+              <div class="banner">
+                  
+                  <div class="bannerContent " style="font-family: Montserrat; color:rgba(0,0,0,1); background-color:rgba(255, 255, 255, 0);">
+  <div class="imageWrapper">
+    <div class="imageInnerWrapper">
+      <div class="imageInnerInnerWrapper">
+        
+      </div>
+    </div>
+  </div>
+  <div class="bannerTextWrapper fitTextParent">
+    <div class="bannerTextInnerWrapper">
+      <div class="bannerText">
+        <div class="title titleText fitText" style="font-size: 32px;">
+          
+        </div>
+        <div class="subtitle fitText" style="font-size: 20px;">
+          Esta oferta termina em:
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+          </div>
+        
+
+        <table class="counterTable">
+            <tbody><tr class="counterRow">
+              
+                <!--YEARS-->
+                <td data-max="9" class="showYears hid">
+                    <div class="counterElement slideDownParent none" style="width: 50px; height: 50px; font-size: 40px;">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">0</div>
+        
+    </div>
+  </div>
+  
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  
+</div>
+
+                </td>
+                <td data-max="9" class="showYears hid">
+                    <div class="counterElement slideDownParent none" style="width: 50px; height: 50px; font-size: 40px;">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">0</div>
+        
+    </div>
+  </div>
+  
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  
+</div>
+
+                </td>
+                <td data-max="9" class="showYears hid">
+                    <div class="counterElement slideDownParent none" style="width: 50px; height: 50px; font-size: 40px;">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">0</div>
+        
+    </div>
+  </div>
+  
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  
+</div>
+
+                </td>
+                <td class="separator showYears hid" style="font-size: 24px;"></td>
+
+                <!--DAYS-->
+                <td data-max="9" class="showDays hid">
+                    <div class="counterElement slideDownParent none" style="width: 50px; height: 50px; font-size: 40px;">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">0</div>
+        
+    </div>
+  </div>
+  
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  
+</div>
+
+                </td>
+                <td data-max="9" class="showDays hid">
+                    <div class="counterElement slideDownParent none" style="width: 50px; height: 50px; font-size: 40px;">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">0</div>
+        
+    </div>
+  </div>
+  
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  
+</div>
+
+                </td>
+                <td data-max="9" class="showDays hid">
+                    <div class="counterElement slideDownParent none" style="width: 50px; height: 50px; font-size: 40px;">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">0</div>
+        
+    </div>
+  </div>
+  
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  
+</div>
+
+                </td>
+                <td class="separator showDays hid" style="font-size: 24px;"></td>
+
+                <!--Hours-->
+                <td data-max="2" class="showHours">
+                    <div class="counterElement slideDownParent none" style="width: 50px; height: 50px; font-size: 40px;">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">0</div>
+        
+    </div>
+  </div>
+  
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  
+</div>
+
+                </td>
+                <td data-max="4" class="showHours">
+                    <div class="counterElement slideDownParent none" style="width: 50px; height: 50px; font-size: 40px;">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">2</div>
+        
+    </div>
+  </div>
+  
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  
+</div>
+
+                </td>
+                <td class="separator showHours" style="font-size: 24px;"></td>
+
+                <!--Minutes-->
+                <td data-max="5" class="showMinutes">
+                    <div class="counterElement slideDownParent none" style="width: 50px; height: 50px; font-size: 40px;">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">5</div>
+        
+    </div>
+  </div>
+  
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  
+</div>
+
+                </td>
+                <td data-max="9" class="showMinutes">
+                    <div class="counterElement slideDownParent none" style="width: 50px; height: 50px; font-size: 40px;">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">9</div>
+        
+    </div>
+  </div>
+  
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  
+</div>
+
+                </td>
+                <td class="separator showMinutes" style="font-size: 24px;"></td>
+
+                <!--Seconds-->
+                <td data-max="5" class="showSeconds">
+                    <div class="counterElement slideDownParent none" style="width: 50px; height: 50px; font-size: 40px;">
+  <div class="currentNumberWrapper" style="top: 0px;">
+    <div class="currentNumber">
+        <div class="value">3</div>
+        
+    </div>
+  </div>
+  
+    <div class="nextNumberWrapper" style="top: 0px;">
+      <div class="nextNumber">
+          <div class="value">3</div>
+      </div>
+    </div>
+  
+</div>
+
+                </td>
+                <td data-max="9" class="showSeconds">
+                    <div class="counterElement slideDownParent none" style="width: 50px; height: 50px; font-size: 40px;">
+  <div class="currentNumberWrapper" style="top: 0%;">
+    <div class="currentNumber">
+        <div class="value">4</div>
+        
+    </div>
+  </div>
+  
+    <div class="nextNumberWrapper" style="top: 0%;">
+      <div class="nextNumber">
+          <div class="value">3</div>
+      </div>
+    </div>
+  
+</div>
+
+                </td>
+                <td class="powrMark" style="display: none;">
+                    <div class="counterElement powrMarkCounterElement none" style="width: 50px; height: 50px; font-size: 40px;">
+                        <table><tbody><tr><td valign="middle">
+                            <a href="https://www.powr.io/?plugin=countdown-timer" target="_blank" class="powrMarkLink">
+                                <span class="powrIcon icon-logo"></span>
+                            </a>
+                        </td></tr></tbody></table>
+                    </div>
+                </td>
+            </tr>
+            <tr class="timeLabels">
+                <td colspan="3" class="showYears fitTextParent timeLabelOuter hid">
+                  <div class="timeLabelWrapper days">
+                    <div class="timeLabel" style="font-size: 14.3px;">
+                      anos
+                    </div>
+                  </div>
+                </td>
+                <td class="afterYears" style="display: none;"></td>
+                <td colspan="3" class="showDays fitTextParent timeLabelOuter hid">
+                    <div class="timeLabelWrapper days">
+                        <div class="timeLabel" style="font-size: 14.3px;">
+                          
+                            dias
+                          
+                        </div>
+                    </div>
+                </td>
+                <td class="afterDays hid"></td>
+                <td colspan="2" class="showHours fitTextParent timeLabelOuter">
+                    <div class="timeLabelWrapper hours">
+                        <div class="timeLabel" style="font-size: 14.3px;">
+                          
+                            horas
+                          
+                        </div>
+                    </div>
+                </td>
+                <td class="afterHours"></td>
+                <td colspan="2" class="showMinutes fitTextParent timeLabelOuter">
+                    <div class="timeLabelWrapper minutes">
+                        <div class="timeLabel" style="font-size: 14.3px;">
+                          
+                            minutos
+                          
+                        </div>
+                    </div>
+                </td>
+                <td class="afterMinutes"></td>
+                <td colspan="2" class="showSeconds fitTextParent timeLabelOuter">
+                    <div class="timeLabelWrapper seconds">
+                        <div class="timeLabel" style="font-size: 14.3px;">
+                          
+                            segundos
+                          
+                        </div>
+                    </div>
+                </td>
+                <td></td>
+              
+            </tr>
+        </tbody></table>
+    </div>
+    <div class="alternates usefulContentLink hid"></div>
+
+</div>
+<script id="countdownTimerStyleTemplate" type="text/html">
+    <style>
+        .afterCompletion .bannerContent{
+    {{ if(m.finishedBackgroundGradient == true){ }}
+        background: -webkit-linear-gradient( {{=m.finishedBackgroundStartColor}} , {{=m.finishedBackgroundEndColor}} );
+        background: -o-linear-gradient( {{=m.finishedBackgroundStartColor}} , {{=m.finishedBackgroundEndColor}} );
+        background: -moz-linear-gradient( {{=m.finishedBackgroundStartColor}} , {{=m.finishedBackgroundEndColor}} );
+        background: -linear-gradient( {{=m.finishedBackgroundStartColor}} , {{=m.finishedBackgroundEndColor}} );
+    {{ }else{ }}
+        background: {{=m.finishedBackgroundColor}};
+    {{ } }}
+}
+
+        {{ if(m.pluginPosition == 'fixed' && m.backgroundGradient == true) { }}
+          .countdownTimer{
+    {{ if(m.backgroundGradient == true){ }}
+        background: -webkit-linear-gradient( {{=m.backgroundStartColor}} , {{=m.backgroundEndColor}} );
+        background: -o-linear-gradient( {{=m.backgroundStartColor}} , {{=m.backgroundEndColor}} );
+        background: -moz-linear-gradient( {{=m.backgroundStartColor}} , {{=m.backgroundEndColor}} );
+        background: -linear-gradient( {{=m.backgroundStartColor}} , {{=m.backgroundEndColor}} );
+    {{ }else{ }}
+        background: {{=m.backgroundColor}};
+    {{ } }}
+}
+          .countdownTimer .nextNumberWrapper, .countdownTimer .currentNumberWrapper {
+            background: transparent;
+            border-color: {{=m.backgroundBorderColor}};
+            border-radius: {{=m.backgroundBorderRadius}};
+            border-width: {{=m.backgroundBorderWidth}};
+            border-style: solid;
+          }
+        {{ }else{ }}
+          .countdownTimer{
+    {{ if(m.beforeBackgroundGradient == true){ }}
+        background: -webkit-linear-gradient( {{=m.beforeBackgroundStartColor}} , {{=m.beforeBackgroundEndColor}} );
+        background: -o-linear-gradient( {{=m.beforeBackgroundStartColor}} , {{=m.beforeBackgroundEndColor}} );
+        background: -moz-linear-gradient( {{=m.beforeBackgroundStartColor}} , {{=m.beforeBackgroundEndColor}} );
+        background: -linear-gradient( {{=m.beforeBackgroundStartColor}} , {{=m.beforeBackgroundEndColor}} );
+    {{ }else{ }}
+        background: {{=m.beforeBackgroundColor}};
+    {{ } }}
+}
+          .countdownTimer .nextNumberWrapper, .countdownTimer .currentNumberWrapper{
+    border-color: {{=m.backgroundBorderColor}};
+    border-radius: {{=m.backgroundBorderRadius}};
+    border-width: {{=m.backgroundBorderWidth}};
+    border-style: solid;
+    {{ if(m.backgroundGradient == true){ }}
+        background: -webkit-linear-gradient( {{=m.backgroundStartColor}} , {{=m.backgroundEndColor}} );
+        background: -o-linear-gradient( {{=m.backgroundStartColor}} , {{=m.backgroundEndColor}} );
+        background: -moz-linear-gradient( {{=m.backgroundStartColor}} , {{=m.backgroundEndColor}} );
+        background: -linear-gradient( {{=m.backgroundStartColor}} , {{=m.backgroundEndColor}} );
+        background-image: linear-gradient(to bottom, {{=m.backgroundStartColor}} 0%, {{=m.backgroundEndColor}} 100%);
+    {{ }else{ }}
+        background: {{=m.backgroundColor}};
+    {{ } }}
+}
+
+        {{ } }}
+
+        .countdownTimer .counterElement{
+            color: {{=m.elementFontColor}};
+            font-family: {{=m.elementFontFamily}};
+            width: {{=m.elementSize}};
+            height: {{=m.elementSize}};
+            font-size: {{=parseInt(m.elementSize)*0.8+'px'}};
+            margin: 0 {{=m.elementSpacing}};
+        }
+        .countdownTimer {
+          {{ if(m.pluginPosition == 'fixed' && m.backgroundGradient == false) { }}
+            background: {{=m.backgroundColor}};
+          {{ }else{ }}
+            background: {{m.beforeBackgroundColor}};
+          {{ } }}
+          padding-top: {{=m.pluginPadding}};
+          padding-bottom: {{=m.pluginPadding}};
+        }
+
+        .flipBottom .nextNumberWrapper, .popup .nextNumberWrapper, .popup .nextNumberWrapper, .flipBottom .currentNumberWrapper {
+          {{ if(m.pluginPosition == 'fixed') { }}
+            background-color: transparent;
+          {{ }else{ }}
+            background-color: {{=m.backgroundColor}};
+          {{ } }}
+          border-width: {{=m.backgroundBorderWidth}};
+          border-color: {{=m.backgroundBorderColor}};
+          border-radius: {{=m.backgroundBorderRadius}};
+        }
+        .countdownTimer .counterElement:not(.powrMarkCounterElement) {
+          border: none !important;
+          border-width: 0px !important;
+          border-radius: 0px !important;
+        }
+        /**/
+         .countdownTimer .icon-logo {
+           font-size: {{=parseInt(m.elementSize)*0.8+'px'}}!important;
+         }
+        .countdownTimer a.btn{
+          font-family: {{=m.elementFontFamily}};
+          font-size: {{=parseInt(m.titleFontSize)*0.45+'px'}}!important;
+          {{ if(m.pluginPosition == 'fixed') { }}
+            background-color: {{=m.elementFontColor}}!important;
+            color: {{=m.backgroundColor}}!important;
+          {{ }else{ }}
+            background-color: {{=m.backgroundColor}}!important;
+            color: {{=m.elementFontColor}}!important;
+          {{ } }}
+        }
+        .countdownTimer .timeLabel, .countdownTimer .subtitle{
+            {{ if(m.pluginPosition == 'fixed') { }}
+              color: {{=m.elementFontColor}};
+            {{ }else{ }}
+              color: {{=m.labelFontColor}};
+            {{ } }}
+            font-family: {{=m.labelFontFamily}};
+            /*font-size: {{=parseInt(m.elementSize)*0.4+'px'}};*/
+        }
+        .countdownTimer .titleText{
+          font-size: {{=m.titleFontSize}};
+          font-family: {{=m.titleFontFamily}};
+          {{ if(m.pluginPosition == 'fixed') { }}
+            color: {{=m.elementFontColor}};
+          {{ }else{ }}
+            color: {{=m.titleFontColor}};
+          {{ } }}
+        }
+        .countdownTimer .separator{
+            font-size: {{=parseInt(m.elementSize)*0.6+'px'}};
+            {{ if(m.pluginPosition == 'fixed') { }}
+              color: {{=m.elementFontColor}}
+            {{ }else{ }}
+              color: {{=m.labelFontColor}};
+            {{ } }}
+        }
+        .countdownTimer .separator:before{
+            {{ if(m.separatorType == 'period'){ }}
+            content: '.';
+            vertical-align: bottom;
+            {{ }else if(m.separatorType == 'colon'){ }}
+            content: ':';
+            vertical-align: middle;
+            {{ }else if(m.separatorType == 'dash'){ }}
+            content: '-';
+            vertical-align: middle;
+            {{ }else if(m.separatorType == 'none'){ }}
+            content: '';
+            padding:5px;
+            {{ } }}
+        }
+        {{ if(m.showYears == false && m.targetType != 'number'){ }}
+          .countdownTimer .showYears{display:none}
+          .countdownTimer .afterYears{display:none}
+          .countdownTimer .separator.showYears{display:none}
+        {{ } }}
+        {{ if(m.showDays == false && m.targetType != 'number'){ }}
+          .countdownTimer .showDays{display:none}
+          .countdownTimer .afterDays{display:none}
+          .countdownTimer .separator.showDays{display:none}
+        {{ } }}
+        {{ if(m.showHours == false){ }}
+          .countdownTimer .showHours{display:none}
+          .countdownTimer .afterHours{display:none}
+          .countdownTimer .separator.showHours{display:none}
+        {{ } }}
+        {{ if(m.showMinutes == false){ }}
+          .countdownTimer .showMinutes{display:none}
+          .countdownTimer .afterMinutes{display:none}
+        {{ } }}
+        {{ if(m.showSeconds == false){ }}
+          .countdownTimer .showSeconds{display:none}
+          .countdownTimer .separator.showMinutes{display:none}
+        {{ } }}
+        {{ if ((m.showHours == false) && (m.showMinutes == false) && (m.showSeconds == false)){ }}
+          .countdownTimer .separator.showDays{display:none}
+        {{ } }}
+        {{ if ((m.showDays == false) && (m.showHours == false) && (m.showMinutes == false) && (m.showSeconds == false)){ }}
+          .countdownTimer .separator.showYears{display:none}
+        {{ } }}
+        {{ if ((m.showMinutes == false) && (m.showSeconds == false)){ }}
+          .countdownTimer .separator.showHours{display:none}
+        {{ } }}
+
+
+        /* .countdownTimer .bannerTextWrapper{
+            color: {{=m.titleFontColor}};
+            font-family: {{=m.titleFontFamily}};
+        } */
+        .countdownTimer .bannerTextWrapper .subtitle, .countdownTimer .bannerTextWrapper .btn{
+            font-size: {{= parseInt(m.titleFontSize)*0.65}}px;
+        }
+
+        .countdownTimer .uncompleted{
+            background-color: {{= m.beforeBackgroundColor}};
+        }
+        .powrMark .counterElement {
+          color: {{=m.elementFontColor}};
+          border-color: {{=m.backgroundBorderColor}};
+          border-radius: {{=m.backgroundBorderRadius}};
+          border-style: solid;
+          border-width: {{=m.backgroundBorderWidth}};
+          {{ if(m.pluginPosition == 'fixed') { }}
+            background: transparent;
+          {{ }else{ }}
+            background: {{=m.backgroundColor}};
+          {{ } }}
+        }
+    </style>
+</script>
+<script id="countdownTimerTemplate" type="text/html">
+    <div class="countdownTimer uncompleted {{=m.pluginPosition}} {{=m.pluginPositionLocation}} {{=m.pluginPosition == 'fixed' ? m.backgroundShadow : null }}">
+        <div class="afterCompletion bannerOuterWrapper hid">
+          <div class="banner">
+              {{ var data = m.locals.dataAfter; }}
+              <div class="bannerContent {{=data.bannerStyle}}" style="font-family: {{=data.textFontFamily}}; color:{{=data.textFontColor}}; background-color:{{=data.backgroundColor}};">
+  <div class="imageWrapper">
+    <div class="imageInnerWrapper">
+      <div class="imageInnerInnerWrapper">
+        {{ if(data.bannerImage.length>0){ }}
+            <img data-node-image="{{=imageUrl(data.bannerImage,'large')}}">
+        {{ } }}
+      </div>
+    </div>
+  </div>
+  <div class="bannerTextWrapper fitTextParent">
+    <div class="bannerTextInnerWrapper">
+      <div class="bannerText">
+        <div class="title titleText fitText" {{= data.titleFontSize ? 'data-orig-font-size="' + data.titleFontSize + '"' : '' }}>
+          {{=data.title}}
+        </div>
+        <div class="subtitle fitText" {{= data.subtitleFontSize ? 'data-orig-font-size="' + data.subtitleFontSize + '"' : '' }}>
+          {{=data.subtitle}}
+        </div>
+        {{ if((data.buttonType == 'link' || data.buttonType == '' || !data.buttonType) && data.buttonText){ }}
+            {{ if(data.buttonUrl.length==0){ }}
+                <a class="btn fitText" href="javascript:void(0);" style="background-color:{{=data.textFontColor}}; color:{{=data.backgroundColor}}">
+            {{ }else{ }}
+                <a class="btn fitText" href="{{=urlFormat(data.buttonUrl)}}" style="background-color:{{=data.textFontColor}}; color:{{=data.backgroundColor}}">
+            {{ } }}
+                    {{=data.buttonText}}
+                </a>
+        {{ } else if (data.buttonType == 'payment'){ }}
+                  <div class="paypalButton">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="paypalForm"  target="_blank">
+
+                      <input type="hidden" name="business" value="{{=data.paypalPaypalAccount || ''}}">
+<input type="hidden" name="item_name" value="{{=htmlSafe(data.paypalItemName || 'Product')}}">
+<input type="hidden" name="bn" value="POWr_SP">
+<input type="hidden" name="charset" value="UTF-8">
+<input type="hidden" name="currency_code" value="{{=data.paypalCurrencyCode || 'USD'}}">
+
+{{ if((data.paypalPurchaseType=='Recurring')){ }}
+
+    <input type="hidden" name="cmd" value="_xclick-subscriptions">
+
+    {{ if(data.paypalTrialOn){ }}
+        <input type="hidden" name="a1" value="{{=data.paypalTrialPrice}}">
+        <input type="hidden" name="p1" value="{{=data.paypalTrialDuration}}">
+        <input type="hidden" name="t1" value="{{=data.paypalTrialDurationUnits}}">
+    {{ } }}
+
+    <input type="hidden" name="a3" value="{{=data.paypalSubscriptionPrice}}">
+    <input type="hidden" name="p3" value="{{=data.paypalSubscriptionDuration}}">
+    <input type="hidden" name="t3" value="{{=data.paypalSubscriptionDurationUnits}}">
+
+    <input type="hidden" name="src" value="1">
+
+{{ } else { }}
+    <input type="hidden" name="cmd" value="{{=(data.paypalPurchaseType=='BuyNow') ? '_xclick' : '_donations'}}">
+
+    {{ if(data.paypalAllowUserToSpecifyPrice == false){ }}
+        <input type="hidden" name="amount" value="{{= data.paypalItemCost || 0 }}">
+    {{ } }}
+
+    {{ if(data.paypalNoShipping){ }}
+        <input type="hidden" name="no_shipping" value="{{=data.paypalNoShipping}}">
+    {{ } }}
+
+    {{ if(data.paypalShippingCost){ }}
+        <input type="hidden" name="shipping" value="{{=data.paypalShippingCost}}">
+    {{ } }}
+    {{ if(data.paypalShippingCost2){ }}
+        <input type="hidden" name="shipping2" value="{{=data.paypalShippingCost2}}">
+    {{ } }}
+
+    {{ if(data.paypalAllowUserToSpecifyQuantity){ }}
+      <input type="hidden" name="undefined_quantity" value="1">
+    {{ } }}
+    <input type="hidden" name="quantity" value="{{=data.paypalQuantity || 1}}">
+
+    {{ if(data.paypalDiscountType == 'flat' && data.paypalDiscount.length>0){ }}
+    <input type="hidden" name="discount_amount" value="0">
+    {{ }else if(data.paypalDiscountType == 'rate' && data.paypalDiscount.length>0){ }}
+    <input type="hidden" name="discount_rate" value="0">
+    {{ } }}
+
+    {{ if(data.paypalTaxType == 'flat' && data.paypalTax){ }}
+    <input type="hidden" name="tax" value="{{=data.paypalTax}}">
+    {{ }else if(data.paypalTaxType == 'rate' && data.paypalTax){ }}
+    <input type="hidden" name="tax_rate" value="{{=(data.paypalTax || '').replace('%','')}}">
+    {{ } }}
+
+{{ } }}
+
+
+{{ if(data.paypalSuccessUrl && data.paypalSuccessUrl.length>0){ }}
+    <input type="hidden" name="return" value="{{=POWr.paypalRedirectUrl(data.paypalSuccessUrl)}}">
+{{ }else{ }}
+    <input type="hidden" name="return" value="https://www.powr.io/plugins/">
+{{ } }}
+<input type="hidden" name="rm" value="1">
+
+<input type="hidden" name="notify_url" rel="nofollow" value="">
+
+
+
+                      <div class='textContainer'>
+                        <a href="javascript:void(0);" class="btn fitText paypalSubmitButton" style="background-color:{{=data.textFontColor}}; color:{{=data.backgroundColor}}">
+                          {{=(data.paypalButtonText || 'Buy now')}}
+                        </a>
+                      </div>
+                    </form>
+
+                  </div>
+        {{ } }}
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+        {{ if (m.locals.dataBefore.title.length > 0 ||  m.locals.dataBefore.buttonText.length > 0 || m.locals.dataBefore.paypalButtonText.length > 0 || m.locals.dataBefore.subtitle.length > 0) { }}
+          <div class="beforeCompletion bannerOuterWrapper">
+              <div class="banner">
+                  {{ var data = m.locals.dataBefore; }}
+                  <div class="bannerContent {{=data.bannerStyle}}" style="font-family: {{=data.textFontFamily}}; color:{{=data.textFontColor}}; background-color:{{=data.backgroundColor}};">
+  <div class="imageWrapper">
+    <div class="imageInnerWrapper">
+      <div class="imageInnerInnerWrapper">
+        {{ if(data.bannerImage.length>0){ }}
+            <img data-node-image="{{=imageUrl(data.bannerImage,'large')}}">
+        {{ } }}
+      </div>
+    </div>
+  </div>
+  <div class="bannerTextWrapper fitTextParent">
+    <div class="bannerTextInnerWrapper">
+      <div class="bannerText">
+        <div class="title titleText fitText" {{= data.titleFontSize ? 'data-orig-font-size="' + data.titleFontSize + '"' : '' }}>
+          {{=data.title}}
+        </div>
+        <div class="subtitle fitText" {{= data.subtitleFontSize ? 'data-orig-font-size="' + data.subtitleFontSize + '"' : '' }}>
+          {{=data.subtitle}}
+        </div>
+        {{ if((data.buttonType == 'link' || data.buttonType == '' || !data.buttonType) && data.buttonText){ }}
+            {{ if(data.buttonUrl.length==0){ }}
+                <a class="btn fitText" href="javascript:void(0);" style="background-color:{{=data.textFontColor}}; color:{{=data.backgroundColor}}">
+            {{ }else{ }}
+                <a class="btn fitText" href="{{=urlFormat(data.buttonUrl)}}" style="background-color:{{=data.textFontColor}}; color:{{=data.backgroundColor}}">
+            {{ } }}
+                    {{=data.buttonText}}
+                </a>
+        {{ } else if (data.buttonType == 'payment'){ }}
+                  <div class="paypalButton">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="paypalForm"  target="_blank">
+
+                      <input type="hidden" name="business" value="{{=data.paypalPaypalAccount || ''}}">
+<input type="hidden" name="item_name" value="{{=htmlSafe(data.paypalItemName || 'Product')}}">
+<input type="hidden" name="bn" value="POWr_SP">
+<input type="hidden" name="charset" value="UTF-8">
+<input type="hidden" name="currency_code" value="{{=data.paypalCurrencyCode || 'USD'}}">
+
+{{ if((data.paypalPurchaseType=='Recurring')){ }}
+
+    <input type="hidden" name="cmd" value="_xclick-subscriptions">
+
+    {{ if(data.paypalTrialOn){ }}
+        <input type="hidden" name="a1" value="{{=data.paypalTrialPrice}}">
+        <input type="hidden" name="p1" value="{{=data.paypalTrialDuration}}">
+        <input type="hidden" name="t1" value="{{=data.paypalTrialDurationUnits}}">
+    {{ } }}
+
+    <input type="hidden" name="a3" value="{{=data.paypalSubscriptionPrice}}">
+    <input type="hidden" name="p3" value="{{=data.paypalSubscriptionDuration}}">
+    <input type="hidden" name="t3" value="{{=data.paypalSubscriptionDurationUnits}}">
+
+    <input type="hidden" name="src" value="1">
+
+{{ } else { }}
+    <input type="hidden" name="cmd" value="{{=(data.paypalPurchaseType=='BuyNow') ? '_xclick' : '_donations'}}">
+
+    {{ if(data.paypalAllowUserToSpecifyPrice == false){ }}
+        <input type="hidden" name="amount" value="{{= data.paypalItemCost || 0 }}">
+    {{ } }}
+
+    {{ if(data.paypalNoShipping){ }}
+        <input type="hidden" name="no_shipping" value="{{=data.paypalNoShipping}}">
+    {{ } }}
+
+    {{ if(data.paypalShippingCost){ }}
+        <input type="hidden" name="shipping" value="{{=data.paypalShippingCost}}">
+    {{ } }}
+    {{ if(data.paypalShippingCost2){ }}
+        <input type="hidden" name="shipping2" value="{{=data.paypalShippingCost2}}">
+    {{ } }}
+
+    {{ if(data.paypalAllowUserToSpecifyQuantity){ }}
+      <input type="hidden" name="undefined_quantity" value="1">
+    {{ } }}
+    <input type="hidden" name="quantity" value="{{=data.paypalQuantity || 1}}">
+
+    {{ if(data.paypalDiscountType == 'flat' && data.paypalDiscount.length>0){ }}
+    <input type="hidden" name="discount_amount" value="0">
+    {{ }else if(data.paypalDiscountType == 'rate' && data.paypalDiscount.length>0){ }}
+    <input type="hidden" name="discount_rate" value="0">
+    {{ } }}
+
+    {{ if(data.paypalTaxType == 'flat' && data.paypalTax){ }}
+    <input type="hidden" name="tax" value="{{=data.paypalTax}}">
+    {{ }else if(data.paypalTaxType == 'rate' && data.paypalTax){ }}
+    <input type="hidden" name="tax_rate" value="{{=(data.paypalTax || '').replace('%','')}}">
+    {{ } }}
+
+{{ } }}
+
+
+{{ if(data.paypalSuccessUrl && data.paypalSuccessUrl.length>0){ }}
+    <input type="hidden" name="return" value="{{=POWr.paypalRedirectUrl(data.paypalSuccessUrl)}}">
+{{ }else{ }}
+    <input type="hidden" name="return" value="https://www.powr.io/plugins/">
+{{ } }}
+<input type="hidden" name="rm" value="1">
+
+<input type="hidden" name="notify_url" rel="nofollow" value="">
+
+
+
+                      <div class='textContainer'>
+                        <a href="javascript:void(0);" class="btn fitText paypalSubmitButton" style="background-color:{{=data.textFontColor}}; color:{{=data.backgroundColor}}">
+                          {{=(data.paypalButtonText || 'Buy now')}}
+                        </a>
+                      </div>
+                    </form>
+
+                  </div>
+        {{ } }}
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+          </div>
+        {{ } }}
+
+        <table class="counterTable">
+            <tr class="counterRow">
+              {{ if (m.targetType == 'number'){ }}
+                {{ for (var i = 0; i < m.locals.digits; i++){ }}
+                  <td data-max="9" class="showDays">
+                    <div class="counterElement {{=m.countdownAnimation}}Parent {{=m.pluginPosition == 'default' ? m.backgroundShadow : null }}">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">
+            0
+        </div>
+        {{ if( typeof index != 'undefined' && index < numberArr.length-1 && (numberArr.length-index-1) % 3 == 0 ){ }}
+        <div class="punctuation"></div>
+        {{ } }}
+    </div>
+  </div>
+  {{ if(m.animationToNumber == 'slideUp' || $.inArray(m.countdownAnimation, ['slideUp','slideDown', 'flipBottom', 'scaleUp', 'popup']) > -1 ){ }}
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  {{ } }}
+</div>
+
+                  </td>
+                {{ } }}
+                <td class="powrMark">
+                    <div class="counterElement powrMarkCounterElement {{=m.pluginPosition == 'default' ? m.backgroundShadow : null }}">
+                        <table><tr><td valign="middle">
+                            <a href="//www.powr.io/?plugin=countdown-timer" target="_blank" class = "powrMarkLink">
+                                <span class="powrIcon icon-logo"></span>
+                            </a>
+                        </td></tr></table>
+                    </div>
+                </td>
+              {{ } else { }}
+                <!--YEARS-->
+                <td data-max="9" class="showYears">
+                    <div class="counterElement {{=m.countdownAnimation}}Parent {{=m.pluginPosition == 'default' ? m.backgroundShadow : null }}">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">
+            0
+        </div>
+        {{ if( typeof index != 'undefined' && index < numberArr.length-1 && (numberArr.length-index-1) % 3 == 0 ){ }}
+        <div class="punctuation"></div>
+        {{ } }}
+    </div>
+  </div>
+  {{ if(m.animationToNumber == 'slideUp' || $.inArray(m.countdownAnimation, ['slideUp','slideDown', 'flipBottom', 'scaleUp', 'popup']) > -1 ){ }}
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  {{ } }}
+</div>
+
+                </td>
+                <td data-max="9" class="showYears">
+                    <div class="counterElement {{=m.countdownAnimation}}Parent {{=m.pluginPosition == 'default' ? m.backgroundShadow : null }}">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">
+            0
+        </div>
+        {{ if( typeof index != 'undefined' && index < numberArr.length-1 && (numberArr.length-index-1) % 3 == 0 ){ }}
+        <div class="punctuation"></div>
+        {{ } }}
+    </div>
+  </div>
+  {{ if(m.animationToNumber == 'slideUp' || $.inArray(m.countdownAnimation, ['slideUp','slideDown', 'flipBottom', 'scaleUp', 'popup']) > -1 ){ }}
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  {{ } }}
+</div>
+
+                </td>
+                <td data-max="9" class="showYears">
+                    <div class="counterElement {{=m.countdownAnimation}}Parent {{=m.pluginPosition == 'default' ? m.backgroundShadow : null }}">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">
+            0
+        </div>
+        {{ if( typeof index != 'undefined' && index < numberArr.length-1 && (numberArr.length-index-1) % 3 == 0 ){ }}
+        <div class="punctuation"></div>
+        {{ } }}
+    </div>
+  </div>
+  {{ if(m.animationToNumber == 'slideUp' || $.inArray(m.countdownAnimation, ['slideUp','slideDown', 'flipBottom', 'scaleUp', 'popup']) > -1 ){ }}
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  {{ } }}
+</div>
+
+                </td>
+                <td class="separator showYears"></td>
+
+                <!--DAYS-->
+                <td data-max="9" class="showDays">
+                    <div class="counterElement {{=m.countdownAnimation}}Parent {{=m.pluginPosition == 'default' ? m.backgroundShadow : null }}">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">
+            0
+        </div>
+        {{ if( typeof index != 'undefined' && index < numberArr.length-1 && (numberArr.length-index-1) % 3 == 0 ){ }}
+        <div class="punctuation"></div>
+        {{ } }}
+    </div>
+  </div>
+  {{ if(m.animationToNumber == 'slideUp' || $.inArray(m.countdownAnimation, ['slideUp','slideDown', 'flipBottom', 'scaleUp', 'popup']) > -1 ){ }}
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  {{ } }}
+</div>
+
+                </td>
+                <td data-max="9" class="showDays">
+                    <div class="counterElement {{=m.countdownAnimation}}Parent {{=m.pluginPosition == 'default' ? m.backgroundShadow : null }}">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">
+            0
+        </div>
+        {{ if( typeof index != 'undefined' && index < numberArr.length-1 && (numberArr.length-index-1) % 3 == 0 ){ }}
+        <div class="punctuation"></div>
+        {{ } }}
+    </div>
+  </div>
+  {{ if(m.animationToNumber == 'slideUp' || $.inArray(m.countdownAnimation, ['slideUp','slideDown', 'flipBottom', 'scaleUp', 'popup']) > -1 ){ }}
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  {{ } }}
+</div>
+
+                </td>
+                <td data-max="9" class="showDays">
+                    <div class="counterElement {{=m.countdownAnimation}}Parent {{=m.pluginPosition == 'default' ? m.backgroundShadow : null }}">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">
+            0
+        </div>
+        {{ if( typeof index != 'undefined' && index < numberArr.length-1 && (numberArr.length-index-1) % 3 == 0 ){ }}
+        <div class="punctuation"></div>
+        {{ } }}
+    </div>
+  </div>
+  {{ if(m.animationToNumber == 'slideUp' || $.inArray(m.countdownAnimation, ['slideUp','slideDown', 'flipBottom', 'scaleUp', 'popup']) > -1 ){ }}
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  {{ } }}
+</div>
+
+                </td>
+                <td class="separator showDays"></td>
+
+                <!--Hours-->
+                <td data-max="2" class="showHours">
+                    <div class="counterElement {{=m.countdownAnimation}}Parent {{=m.pluginPosition == 'default' ? m.backgroundShadow : null }}">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">
+            0
+        </div>
+        {{ if( typeof index != 'undefined' && index < numberArr.length-1 && (numberArr.length-index-1) % 3 == 0 ){ }}
+        <div class="punctuation"></div>
+        {{ } }}
+    </div>
+  </div>
+  {{ if(m.animationToNumber == 'slideUp' || $.inArray(m.countdownAnimation, ['slideUp','slideDown', 'flipBottom', 'scaleUp', 'popup']) > -1 ){ }}
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  {{ } }}
+</div>
+
+                </td>
+                <td data-max="4" class="showHours">
+                    <div class="counterElement {{=m.countdownAnimation}}Parent {{=m.pluginPosition == 'default' ? m.backgroundShadow : null }}">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">
+            0
+        </div>
+        {{ if( typeof index != 'undefined' && index < numberArr.length-1 && (numberArr.length-index-1) % 3 == 0 ){ }}
+        <div class="punctuation"></div>
+        {{ } }}
+    </div>
+  </div>
+  {{ if(m.animationToNumber == 'slideUp' || $.inArray(m.countdownAnimation, ['slideUp','slideDown', 'flipBottom', 'scaleUp', 'popup']) > -1 ){ }}
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  {{ } }}
+</div>
+
+                </td>
+                <td class="separator showHours"></td>
+
+                <!--Minutes-->
+                <td data-max="5" class="showMinutes">
+                    <div class="counterElement {{=m.countdownAnimation}}Parent {{=m.pluginPosition == 'default' ? m.backgroundShadow : null }}">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">
+            0
+        </div>
+        {{ if( typeof index != 'undefined' && index < numberArr.length-1 && (numberArr.length-index-1) % 3 == 0 ){ }}
+        <div class="punctuation"></div>
+        {{ } }}
+    </div>
+  </div>
+  {{ if(m.animationToNumber == 'slideUp' || $.inArray(m.countdownAnimation, ['slideUp','slideDown', 'flipBottom', 'scaleUp', 'popup']) > -1 ){ }}
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  {{ } }}
+</div>
+
+                </td>
+                <td data-max="9" class="showMinutes">
+                    <div class="counterElement {{=m.countdownAnimation}}Parent {{=m.pluginPosition == 'default' ? m.backgroundShadow : null }}">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">
+            0
+        </div>
+        {{ if( typeof index != 'undefined' && index < numberArr.length-1 && (numberArr.length-index-1) % 3 == 0 ){ }}
+        <div class="punctuation"></div>
+        {{ } }}
+    </div>
+  </div>
+  {{ if(m.animationToNumber == 'slideUp' || $.inArray(m.countdownAnimation, ['slideUp','slideDown', 'flipBottom', 'scaleUp', 'popup']) > -1 ){ }}
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  {{ } }}
+</div>
+
+                </td>
+                <td class="separator showMinutes" ></td>
+
+                <!--Seconds-->
+                <td data-max="5" class="showSeconds">
+                    <div class="counterElement {{=m.countdownAnimation}}Parent {{=m.pluginPosition == 'default' ? m.backgroundShadow : null }}">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">
+            0
+        </div>
+        {{ if( typeof index != 'undefined' && index < numberArr.length-1 && (numberArr.length-index-1) % 3 == 0 ){ }}
+        <div class="punctuation"></div>
+        {{ } }}
+    </div>
+  </div>
+  {{ if(m.animationToNumber == 'slideUp' || $.inArray(m.countdownAnimation, ['slideUp','slideDown', 'flipBottom', 'scaleUp', 'popup']) > -1 ){ }}
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  {{ } }}
+</div>
+
+                </td>
+                <td data-max="9" class="showSeconds">
+                    <div class="counterElement {{=m.countdownAnimation}}Parent {{=m.pluginPosition == 'default' ? m.backgroundShadow : null }}">
+  <div class="currentNumberWrapper">
+    <div class="currentNumber">
+        <div class="value">
+            0
+        </div>
+        {{ if( typeof index != 'undefined' && index < numberArr.length-1 && (numberArr.length-index-1) % 3 == 0 ){ }}
+        <div class="punctuation"></div>
+        {{ } }}
+    </div>
+  </div>
+  {{ if(m.animationToNumber == 'slideUp' || $.inArray(m.countdownAnimation, ['slideUp','slideDown', 'flipBottom', 'scaleUp', 'popup']) > -1 ){ }}
+    <div class="nextNumberWrapper">
+      <div class="nextNumber">
+          <div class="value">1</div>
+      </div>
+    </div>
+  {{ } }}
+</div>
+
+                </td>
+                <td class="powrMark">
+                    <div class="counterElement powrMarkCounterElement {{=m.pluginPosition == 'default' ? m.backgroundShadow : null }}">
+                        <table><tr><td valign="middle">
+                            <a href="//www.powr.io/?plugin=countdown-timer" target="_blank" class = "powrMarkLink">
+                                <span class="powrIcon icon-logo"></span>
+                            </a>
+                        </td></tr></table>
+                    </div>
+                </td>
+            </tr>
+            <tr class="timeLabels">
+                <td colspan="3" class="showYears fitTextParent timeLabelOuter">
+                  <div class="timeLabelWrapper days">
+                    <div class="timeLabel">
+                      {{=m.yearsLabel}}
+                    </div>
+                  </div>
+                </td>
+                <td class = "afterYears"></td>
+                <td colspan="3" class="showDays fitTextParent timeLabelOuter">
+                    <div class="timeLabelWrapper days">
+                        <div class="timeLabel">
+                          {{ if(m.timeLabels == 'Days-Hours-Minutes-Seconds'){ }}
+                            Days
+                          {{ }else if(m.timeLabels == 'D-H-M-S'){ }}
+                            D
+                          {{ }else if(m.timeLabels == 'Jours-Heures-Minutes-Secondes'){ }}
+                            Jours
+                          {{ }else if(m.timeLabels == 'J-H-M-S'){ }}
+                            J
+                          {{ }else if(m.timeLabels == 'custom'){ }}
+                            {{=m.daysLabel}}
+                          {{ } }}
+                        </div>
+                    </div>
+                </td>
+                <td class = "afterDays"></td>
+                <td colspan="2" class="showHours fitTextParent timeLabelOuter">
+                    <div class="timeLabelWrapper hours">
+                        <div class="timeLabel">
+                          {{ if(m.timeLabels == 'Days-Hours-Minutes-Seconds'){ }}
+                            Hours
+                          {{ }else if(m.timeLabels == 'D-H-M-S'){ }}
+                            H
+                          {{ }else if(m.timeLabels == 'Jours-Heures-Minutes-Secondes'){ }}
+                            Heures
+                          {{ }else if(m.timeLabels == 'J-H-M-S'){ }}
+                            H
+                          {{ }else if(m.timeLabels == 'custom'){ }}
+                            {{=m.hoursLabel}}
+                          {{ } }}
+                        </div>
+                    </div>
+                </td>
+                <td class = "afterHours"></td>
+                <td colspan="2" class="showMinutes fitTextParent timeLabelOuter">
+                    <div class="timeLabelWrapper minutes">
+                        <div class="timeLabel">
+                          {{ if(m.timeLabels == 'Days-Hours-Minutes-Seconds'){ }}
+                            Minutes
+                          {{ }else if(m.timeLabels == 'D-H-M-S'){ }}
+                            M
+                          {{ }else if(m.timeLabels == 'Jours-Heures-Minutes-Secondes'){ }}
+                            Minutes
+                          {{ }else if(m.timeLabels == 'J-H-M-S'){ }}
+                            M
+                          {{ }else if(m.timeLabels == 'custom'){ }}
+                            {{=m.minutesLabel}}
+                          {{ } }}
+                        </div>
+                    </div>
+                </td>
+                <td class = "afterMinutes"></td>
+                <td colspan="2" class="showSeconds fitTextParent timeLabelOuter">
+                    <div class="timeLabelWrapper seconds">
+                        <div class="timeLabel">
+                          {{ if(m.timeLabels == 'Days-Hours-Minutes-Seconds'){ }}
+                            Seconds
+                          {{ }else if(m.timeLabels == 'D-H-M-S'){ }}
+                            S
+                          {{ }else if(m.timeLabels == 'Jours-Heures-Minutes-Secondes'){ }}
+                            Secondes
+                          {{ }else if(m.timeLabels == 'J-H-M-S'){ }}
+                            S
+                          {{ }else if(m.timeLabels == 'custom'){ }}
+                            {{=m.secondsLabel}}
+                          {{ } }}
+                        </div>
+                    </div>
+                </td>
+                <td></td>
+              {{ } }}
+            </tr>
+        </table>
+    </div>
+    <div class='alternates usefulContentLink hid'></div>
+
+</script>
+<script>
+  window.CONTENT={"elementSize":"50px","elementSpacing":"4px","labelFontScale":"0.65","timerGoal":"countdownTimeVisitor","backgroundGradient":false,"backgroundColor":"rgba(234,67,53,1)","backgroundStartColor":"#979797","backgroundEndColor":"#120a1e","backgroundBorderColor":"#dbdbdb","backgroundBorderRadius":"5px","backgroundBorderWidth":"0px","backgroundShadow":"none","targetDate":"2019-05-14T02:57:57.152Z","targetDateFormat":"","countDirection":"down","interval":"6","intervalUnit":"seconds","targetType":"timePerVisitor","targetNumber":"54","perVisitorQuantity":"3","perVisitorUnit":"h","repeatQuantity":"1","repeatUnit":"M","beforeCompletion":"banner","beforeTitle":"","beforeSubtitle":"Esta oferta termina em:","beforeButtonType":"none","beforeButtonText":"","beforeButtonUrl":"","beforeBannerImage":"","paypalBeforeQuantity":1,"paypalBeforeButtonText":"Buy Now","paypalBeforePaypalAccount":"","paypalBeforeCurrencyCode":"USD","paypalBeforePurchaseType":"BuyNow","paypalBeforeSuccessUrl":"","paypalBeforeItemName":"Product","paypalBeforeItemCost":"10.00","paypalBeforeAllowUserToSpecifyPrice":false,"paypalBeforeAllowUserToSpecifyQuantity":false,"paypalBeforeTrialOn":false,"paypalBeforeTrialPrice":0,"paypalBeforeTrialDuration":30,"paypalBeforeTrialDurationUnits":"D","paypalBeforeSubscriptionPrice":10,"paypalBeforeSubscriptionDuration":1,"paypalBeforeSubscriptionDurationUnits":"M","paypalBeforeShippingCost":"","paypalBeforeNoShipping":"0","beforeBackgroundColor":"rgba(255, 255, 255, 0)","beforeBackgroundGradient":false,"beforeBannerStyle":"layout3","pluginPadding":"0px","linkBehavior":"_blank","afterCompletion":"repeat","finishedTitle":"","finishedSubtitle":"","finishedButtonType":"none","finishedButtonText":"","finishedButtonUrl":"","finishedBannerImage":"","paypalQuantity":1,"paypalButtonText":"Buy Now","paypalPaypalAccount":"","paypalCurrencyCode":"USD","paypalPurchaseType":"BuyNow","paypalSuccessUrl":"","paypalItemName":"Product","paypalItemCost":"10.00","paypalAllowUserToSpecifyPrice":false,"paypalAllowUserToSpecifyQuantity":false,"paypalTrialOn":false,"paypalTrialPrice":0,"paypalTrialDuration":30,"paypalTrialDurationUnits":"D","paypalSubscriptionPrice":10,"paypalSubscriptionDuration":1,"paypalSubscriptionDurationUnits":"M","paypalShippingCost":"","paypalNoShipping":"0","beforeBackgroundStartColor":"#fff","beforeBackgroundEndColor":"#c0c0c0","finishedBackgroundColor":"rgba(255, 255, 255, 0.5)","finishedBackgroundStartColor":"#fff","finishedBackgroundEndColor":"#c0c0c0","finishedBackgroundGradient":false,"finishedBannerStyle":"layout3","timeLabels":"custom","separatorType":"colon","showYears":false,"showDays":false,"showHours":true,"showMinutes":true,"showSeconds":true,"yearsLabel":"anos","daysLabel":"dias","hoursLabel":"horas","minutesLabel":"minutos","secondsLabel":"segundos","elementFontColor":"rgba(253,253,253,1)","elementFontFamily":"Montserrat","animationSpeed":"240","countdownAnimation":"slideDown","titleFontFamily":"Montserrat","titleFontSize":"32px","titleFontColor":"rgba(0,0,0,1)","labelFontFamily":"Montserrat","labelFontColor":"rgba(0,0,0,1)","passwordProtectOn":false,"customCSS":"","customJS":"","pluginPosition":"default","pluginPositionLocation":"top","template":19869172};
+  window.BACKUP_CONTENT=null;
+  window.META={"id":20176176,"true_id":20176176,"app_type":"countdownTimer","app_namespace":"countdownTimer","app_common_name":"Countdown Timer","active":true,"saved":true,"soft_alias":false};
+  window.GLOBALS=null;
+  window.IS_EU = false;
+  window.IS_US = false;
+  window.HOST = "powr";
+</script>
+<nav class="bottom-nav js-show-if-pos" style="display: none">
+<div class="nav-logo nav-item">
+<a class="nav-item margin-right-m">
+<i class="icon-logo"></i>
+<span class="type-logo">POWr</span>
+<span class="editor-logo">Editor</span>
+</a>
+</div>
+<div class="nav-cta flex-row align-items-center">
+<a class="margin-right-l" href="https://www.powr.io/shopify/pos/form-builder?choose_default=true">
+All Forms -&gt;
+</a>
+</div>
+</nav>
+<script>
+  window.APP_DETAILS = {"slug":"countdown-timer","app_namespace":"countdownTimer"};
+</script>
+<script src="./apps-view-e64a3dcf8a5d26934921.js.download"></script>
+<script src="./countdownTimer-99a33507532e173baef2.js.download"></script>
+
+
+</body></html>
